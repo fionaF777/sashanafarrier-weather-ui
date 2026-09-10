@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+          <h1>Weather App</h1>
+    </header>
+    <main>
+        <section id="weather-container">
+            <div class="location">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 64C214 64 128 148.4 128 252.6C128 371.9 248.2 514.9 298.4 569.4C310.2 582.2 329.8 582.2 341.6 569.4C391.8 514.9 512 371.9 512 252.6C512 148.4 426 64 320 64z"/></svg> 
+                <h2 id="userLocation"> </h2>
+            </div>
+            
+            <form id="weather-form">
+                <input type="text" id="city-input" placeholder="Enter city name" required>
+                <div class="btn-group">
+                    <button type="submit">Get Weather</button>
+                    <button id="clear-history-btn" type="button">Clear History</button>
+                </div>
+                
+            </form>
+            <div id="weather-results"></div>
+            
+        </section>
+        <!-- <section class="weather-forecast">
+            <h2>Weather Forecast</h2>
+            <div id="forecast-result"></div>
+        </section>
+        <section class="weather-map">
+            <h2>Weather Map</h2>
+            <div id="map"></div>
+        </section> -->
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #ecf0f1;
+  background-color: #f0f0f0;
+}
+
+body {
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+}
+
+
+header {
+  background-color: #1b2735;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+  
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 1rem;
+  background-color: #2c3e50 ;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4e54c8;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#weather-container {
+    padding: 3rem;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+  /* width: 50%; */
+}
+
+#clear-history-btn {
+  margin-left: 1rem;
+  background-color: transparent;
+  border: 1px solid #4e54c8;
+}
+
+svg {
+    font-size: 24px;
+    fill: #ecf0f1;
+    width: 24px;
+    display: inline-block;
+    
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#weather-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 20px;
+}
+
+#weather-form input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+#weather-form button {
+  color: inherit;
+}
+
+#weather-form button:hover {
+  background-color: #6c63ff;
+}
+
+.temperature {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.weather-result {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background-color: #071d27;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-result .details p + p {
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 700px) {
+  #weather-form {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .weather-result {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  #weather-container {
+    width: 85%; 
+    margin-inline: auto;
+  }
+
+}
