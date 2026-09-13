@@ -16,6 +16,7 @@ body {
 
 body {
   background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+   position: relative;
 }
 
 
@@ -78,6 +79,10 @@ svg {
     margin-bottom: 20px;
 }
 
+.location svg {
+  display: none;
+}
+
 #weather-form {
   display: flex;
   flex-direction: column;
@@ -121,6 +126,39 @@ svg {
 .weather-result .details p + p {
   margin-top: 10px;
 }
+
+#loading {
+  display: none;
+  place-self: center;
+  justify-content: center;
+  color: #071d27;
+  text-align: center;
+  position: absolute;
+  top: 30%;
+  margin-inline: auto;
+  padding: 3rem;
+  /* width: 50%; */
+  background-color: #ecf0f1;
+  border-radius: 1rem;
+  /* isolation: isolate; */
+}
+
+#loading svg {
+  width:  9rem;
+  fill: #071d27;
+}
+
+/* #loading::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  background-color: black;
+  border-radius: 1rem;
+  z-index: -1;
+} */
+
+
 
 @media screen and (min-width: 700px) {
   #weather-form {
