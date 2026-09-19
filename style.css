@@ -52,6 +52,14 @@ button {
     padding: 3rem;
 }
 
+#weather-container > span {
+   font-size: .8rem;
+   font-style: italic;
+   color: #ccc;
+   display: inline-block;
+   margin-bottom: .5rem;
+}
+
 .btn-group {
   display: flex;
   justify-content: space-between;
